@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>mobile</title>
+</head>
+
+<body>
+    <header>
+        <h3>Develop by <a href="https://github.com/starksid3000">Siddharth Dave
+        </a></h3>
+    </header>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav-link">
+                <ul>
+
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PHONE</a></li>
+                    <li><a href="">ACCESORIES</a></li>
+                    <li><a href="">CART</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/mobile.png" class="mobile" alt="">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="images/camera.png" alt="">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>12mp</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/processor.png" alt="">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>snapdragon 855, quad core</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/display.png" alt="">
+                    <div>
+                        <h1>Display</h1>
+                        <p>120hz led</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/battery.png" alt="">
+                    <div>
+                        <h1>Battery life</h1>
+                        <p>4000MaH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow.png" alt="" id="upbtn">
+            <h3>Features</h3>
+            <img src="images/arrow.png" alt="" id="downbtn">
+        </div>
+    </div>
+
+
+    <script>
+        var circle = document.getElementById('circle');
+        var upbtn = document.getElementById('upbtn');
+        var downbtn = document.getElementById('downbtn');
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upbtn.onclick = function(){
+            roateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = roateSum;
+            rotateValue=roateSum;
+        }
+        downbtn.onclick = function(){
+            roateSum = rotateValue + "rotate(+90deg)";
+            circle.style.transform = roateSum;
+            rotateValue=roateSum;
+        }
+    </script>
+</body>
+
+</html>
